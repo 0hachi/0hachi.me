@@ -1,0 +1,30 @@
+@import url(base.css);
+
+body {
+  max-width: 666px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.date {
+  margin-bottom: 1rem;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+div.sourceCode  {
+  background-color: #222;
+  border: 2px solid #fff;
+  width: 100%;
+  padding: 0.5rem;
+}

@@ -24,7 +24,7 @@ for file in $1/*.md; do
 
   posts+="<li><a href=\"$post_link\">$post_link</a></li>"
 
-  pandoc -s -f markdown -t html -o $to $file
+  pandoc -s -f markdown -t html5+smart --highlight=zenburn --css /styles/theme.css -o $to $file
 
   echo $to
 done

@@ -15,3 +15,4 @@ make serve # serves the website on localhost:8000
 - tidy css
 - web optimisation
 - git hooks
+- public folder(?)

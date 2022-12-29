@@ -13,7 +13,7 @@ SCRIPTS_DIR=scripts
 all: clean build serve
 
 clean:
-	find $(DIST_DIR) -mindepth 1 -maxdepth 1 -not -name '.gitkeep' -exec rm -rf {} \;
+	find $(DIST_DIR) -mindepth 1 -maxdepth 1 -not -name '🤍' -exec rm -rf {} \;
 
 build:
 	./$(SCRIPTS_DIR)/build.sh $(POSTS_DIR) $(DIST_DIR)
