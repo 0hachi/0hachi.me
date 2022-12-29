@@ -10,7 +10,7 @@ DIST_DIR=dist
 POSTS_DIR=posts
 SCRIPTS_DIR=scripts
 
-all: clean build
+all: clean build serve
 
 clean:
 	find $(DIST_DIR) -mindepth 1 -maxdepth 1 -not -name '.gitkeep' -exec rm -rf {} \;
