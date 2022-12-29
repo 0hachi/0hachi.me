@@ -30,7 +30,11 @@ for file in $1/*.md; do
 done
 
 cp -r assets $2
-cp index.html style.css $2
+
+mkdir -p $2/styles
+cp styles/* $2/styles
+
+cp index.html $2
 
 posts=$(echo $posts | sed -e "s/\//\\\\\//g")
 sed -i -e "s/<!-- POSTS -->/<ul>$posts<\/ul>/g" $2/index.html

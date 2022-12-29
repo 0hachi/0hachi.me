@@ -20,6 +20,3 @@ build:
 
 serve:
 	python3 -m http.server --directory $(DIST_DIR)
-
-watch:
-	./$(SCRIPTS_DIR)/watch.sh $(POSTS_DIR)
