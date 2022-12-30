@@ -8,10 +8,9 @@ I don't think I'll make a lot of posts here 😭, but soon you'll find one on ho
 
 ---
 
-Other than that, if you're someone who lost contact with me since the online persona switch, you can very well try contacting me via the various social media links on the sidebar.
-
+Other than that, if you're someone who lost contact with me since the online persona switch, you can very well try contacting me via the various social media links on the sidebar. <br/> <br/>
 Love y'all!
 
 ```sh
-$ curl -s https://0hachi.me/🤍 | grep -o '0hachi.me'
+$ curl -s https://0hachi.me/🤍
 ```
