@@ -1,6 +1,6 @@
 #! /usr/bin/env sh
 
-make clean build
+make clean build posts=1
 git checkout build
 git checkout main -- dist
 
