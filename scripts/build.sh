@@ -37,6 +37,7 @@ if [ "$BUILD_POSTS" = 1 ]; then
   done
 
   posts=$(echo $posts | sed -e "s/\//\\\\\//g")
+
   sed -i -e "s/<!-- POSTS -->/<ul>$posts<\/ul>/g" $DIST_DIR/index.html
 fi
 

@@ -18,31 +18,49 @@ hr {
   margin-bottom: 1rem;
 }
 
-div.sourceCode  {
+div.sourceCode {
   border: 1px solid #fff;
   width: 100%;
 
-  padding-right: .3rem;
-  padding-left: .3rem;
-  padding-top: .1rem;
-  padding-bottom: .1rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+div.sourceCode {
+  background-color: #111;
 }
 
 .date {
   margin-bottom: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0.2rem;
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   border-left: 1px solid #fff;
   padding-left: 0.5rem;
 }
 
-h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
-  margin-top: .2rem;
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
+  margin-top: 0.2rem;
 }
 
 p {
