@@ -31,7 +31,7 @@ if [ "$BUILD_POSTS" = 1 ]; then
 
     posts+="<li><a href=\"$post_link\">$post_link</a></li>"
 
-    pandoc -s -f markdown -t html5+smart --highlight=zenburn --css /styles/theme.css -o $to $file
+    pandoc -s -f markdown -t html5+smart --highlight=zenburn -H METADATA --css /styles/theme.css -o $to $file
 
     echo $to
   done
@@ -40,3 +40,5 @@ if [ "$BUILD_POSTS" = 1 ]; then
   sed -i -e "s/<!-- POSTS -->/<ul>$posts<\/ul>/g" $DIST_DIR/index.html
 fi
 
+METADATA=$(cat METADATA | sed -e "s/\//\\\\\//g")
+sed -i -e "s/<!-- METADATA -->/$METADATA/g" $DIST_DIR/index.html
