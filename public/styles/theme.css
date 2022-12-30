@@ -13,10 +13,6 @@ body {
   justify-content: center;
 }
 
-.date {
-  margin-bottom: 1rem;
-}
-
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -27,4 +23,8 @@ div.sourceCode  {
   border: 2px solid #fff;
   width: 100%;
   padding: 0.5rem;
+}
+
+.date {
+  margin-bottom: 1rem;
 }
