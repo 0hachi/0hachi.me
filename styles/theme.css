@@ -19,12 +19,24 @@ hr {
 }
 
 div.sourceCode  {
-  background-color: #222;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   width: 100%;
-  padding: 0.5rem;
+
+  padding-right: .3rem;
+  padding-left: .3rem;
+  padding-top: .1rem;
+  padding-bottom: .1rem;
 }
 
 .date {
   margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.2rem;
+}
+
+p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }

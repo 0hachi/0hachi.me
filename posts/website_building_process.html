@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>how this website was built</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #cccccc; background-color: #303030; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ffcfaf; } /* Alert */
+    code span.an { color: #7f9f7f; font-weight: bold; } /* Annotation */
+    code span.at { } /* Attribute */
+    code span.bn { color: #dca3a3; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #f0dfaf; } /* ControlFlow */
+    code span.ch { color: #dca3a3; } /* Char */
+    code span.cn { color: #dca3a3; font-weight: bold; } /* Constant */
+    code span.co { color: #7f9f7f; } /* Comment */
+    code span.cv { color: #7f9f7f; font-weight: bold; } /* CommentVar */
+    code span.do { color: #7f9f7f; } /* Documentation */
+    code span.dt { color: #dfdfbf; } /* DataType */
+    code span.dv { color: #dcdccc; } /* DecVal */
+    code span.er { color: #c3bf9f; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #c0bed1; } /* Float */
+    code span.fu { color: #efef8f; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #7f9f7f; font-weight: bold; } /* Information */
+    code span.kw { color: #f0dfaf; } /* Keyword */
+    code span.op { color: #f0efd0; } /* Operator */
+    code span.ot { color: #efef8f; } /* Other */
+    code span.pp { color: #ffcfaf; font-weight: bold; } /* Preprocessor */
+    code span.sc { color: #dca3a3; } /* SpecialChar */
+    code span.ss { color: #cc9393; } /* SpecialString */
+    code span.st { color: #cc9393; } /* String */
+    code span.va { } /* Variable */
+    code span.vs { color: #cc9393; } /* VerbatimString */
+    code span.wa { color: #7f9f7f; font-weight: bold; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="/styles/theme.css" />
+  <title>0hachi</title><meta name="description" content="perennial procrastinator"><meta property="og:url" content="https://0hachi.me/"><meta property="og:type" content="website"><meta property="og:title" content="0hachi"><meta property="og:description" content="perennial procrastinator"><meta property="og:image" content="https://0hachi.me/assets/shizuku.png"><meta name="twitter:card" content="summary_large_image"><meta property="twitter:domain" content="0hachi.me"><meta property="twitter:url" content="https://0hachi.me/"><meta name="twitter:title" content="0hachi"><meta name="twitter:description" content="perennial procrastinator"><meta name="twitter:image" content="https://0hachi.me/assets/shizuku.png">
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">how this website was built</h1>
+<p class="date">30.12.2022</p>
+</header>
+<h2 id="styling-a-simple-blog">styling a simple blog</h2>
+<p>i used to be hesitant about making websites because i found the tools
+&amp; technologies frustrating to work with, &amp; i’m not a designer.
+that changed when i came across <a
+href="https://webb.spiderden.org/">webb’s website</a>. although i was
+familiar with minimalism &amp; simplicity, i had never seen a website
+that exploited it in such a beautiful way.</p>
+<p>inspired by webb’s design, i created my own website &amp; made a few
+changes to it. however, the most challenging part was the blog. i wanted
+to create a blog that was as simple as possible &amp; easy to update
+with new posts.</p>
+<h2 id="static-generation-of-blog-posts">static generation of blog
+posts</h2>
+<p>my first idea was to use a static site generator, but i found the
+configuration overwhelming &amp; disliked the added complexity &amp;
+design. instead, i turned to a tool i used to use a lot when taking
+latex notes: <a href="https://pandoc.org/">pandoc</a>.</p>
+<p>to generate my blog posts, i simply fed p&amp;oc <code>.md</code>
+files &amp; it converted them to <code>.html</code> files.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> file <span class="kw">in</span> posts/<span class="pp">*</span>.md<span class="kw">;</span> <span class="cf">do</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="ex">pandoc</span> <span class="at">-s</span> <span class="at">-o</span> <span class="st">&quot;</span><span class="va">${file</span><span class="op">%</span>.md<span class="va">}</span><span class="st">.html&quot;</span> <span class="st">&quot;</span><span class="va">$file</span><span class="st">&quot;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code></pre></div>
+<p>i then adapted the styling to match my website by adding a –css flag
+that pointed to my stylesheet. pandoc already handled syntax
+highlighting &amp; basic styling for various blog elements, which made
+the process easier.</p>
+<p>incorporating the index into the page was similarly straightforward.
+i added dummy comments around the files i wanted to include, &amp; then
+used sed to replace them with the actual content.</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;section</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;index&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;h1&gt;</span>blog<span class="kw">&lt;/h1&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="co">&lt;!-- posts --&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/section&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sed</span> <span class="at">-i</span> <span class="at">-e</span> <span class="st">&quot;s/&lt;!-- posts --&gt;/</span><span class="va">$posts</span><span class="st">/g&quot;</span> dist/index.html</span></code></pre></div>
+<p>now, all we’re left with is a bunch of <code>.html</code> files in
+the <code>dist</code> folder. as i use github pages to host my website,
+i decided to create a script to compile &amp; push the output to the
+<code>build</code> branch.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#! /usr/bin/env sh</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># or whatever you use</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> clean build posts=1</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout build</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main <span class="at">--</span> dist</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co"># avoids conflicts with non-empty directories</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="fu">rsync</span> <span class="at">-a</span> dist/ . <span class="at">--exclude</span><span class="op">=</span>.gitkeep</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> <span class="at">-rf</span> dist</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;build: </span><span class="va">$(</span><span class="fu">date</span><span class="va">)</span><span class="st"> (automated commit)&quot;</span> <span class="dt">\</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>           <span class="at">-m</span> <span class="st">&quot;</span><span class="va">$(</span><span class="fu">git</span> log <span class="at">-1</span> <span class="at">--pretty</span><span class="op">=</span>%B<span class="va">)</span><span class="st">&quot;</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin build</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span></code></pre></div>
+<h2 id="final-thoughts">final thoughts</h2>
+<p>i can say, with confidence, that this was the most fun i’ve had
+making a website. i’m not sure if i’ll continue to make posts on this
+blog, but i’m glad i made it.</p>
+<p>if you’re interested in the full source code, you can find it <a
+href="https://gitlab.com/0hachi/0hachi.me">here</a> on gitlab.</p>
+</body>
+</html>
