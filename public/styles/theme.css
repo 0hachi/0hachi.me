@@ -33,7 +33,16 @@ div.sourceCode  {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
+}
+
+h2, h3, h4, h5, h6 {
+  border-left: 1px solid #fff;
+  padding-left: 0.5rem;
+}
+
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+  margin-top: .2rem;
 }
 
 p {
