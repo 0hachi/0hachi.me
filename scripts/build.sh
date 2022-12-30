@@ -13,17 +13,20 @@ if [ -z $2 ]; then
   usage
 fi
 
+POSTS_DIR=$1
+DIST_DIR=$2
+BUILD_POSTS=$3
+
 posts=""
-mkdir -p $2/$1
+mkdir -p $DIST_DIR/$POSTS_DIR
 
-cp index.html $2
+cp -r public/* $DIST_DIR
 
+if [ "$BUILD_POSTS" = 1 ]; then
+  for file in $POSTS_DIR/*.md; do
+    to=$(echo $file | sed -e "s/$POSTS_DIR/$DIST_DIR\/$POSTS_DIR/g" -e "s/.md/.html/g")
 
-if [ "$3" = 1 ]; then
-  for file in $1/*.md; do
-    to=$(echo $file | sed -e "s/$1/$2\/$1/g" -e "s/.md/.html/g")
-
-    post_link=${to#"$2"}
+    post_link=${to#"$DIST_DIR"}
     date=$(grep -oP '(?<=date: ).*' $file)
 
     posts+="<li><a href=\"$post_link\">$post_link</a></li>"
@@ -34,8 +37,6 @@ if [ "$3" = 1 ]; then
   done
 
   posts=$(echo $posts | sed -e "s/\//\\\\\//g")
-  sed -i -e "s/<!-- POSTS -->/<ul>$posts<\/ul>/g" $2/index.html
+  sed -i -e "s/<!-- POSTS -->/<ul>$posts<\/ul>/g" $DIST_DIR/index.html
 fi
-
-cp -r public $2
 
