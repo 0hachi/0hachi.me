@@ -2,9 +2,12 @@
 
 make clean build
 git checkout build
-
 git checkout main -- dist
-git add dist/**/*
+
+mv dist/* .
+rm -rf dist
+
+git add .
 git commit -m "build: $(date) (automated commit)" -m "$(git log -1 --pretty=%B)"
 
 git push origin build
