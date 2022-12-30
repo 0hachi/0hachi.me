@@ -4,7 +4,7 @@ make clean build
 git checkout build
 git checkout main -- dist
 
-mv dist/* .
+mv -f dist/* .
 rm -rf dist
 
 git add .
