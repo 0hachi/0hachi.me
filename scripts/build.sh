@@ -37,6 +37,5 @@ if [ "$3" = 1 ]; then
   sed -i -e "s/<!-- POSTS -->/<ul>$posts<\/ul>/g" $2/index.html
 fi
 
-cp -r assets $2
-cp -r styles $2/styles
+cp -r public $2
 
