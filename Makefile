@@ -16,7 +16,9 @@ clean:
 	find $(DIST_DIR) -mindepth 1 -maxdepth 1 -not -name '🤍' -exec rm -rf {} \;
 
 build:
-	./$(SCRIPTS_DIR)/build.sh $(POSTS_DIR) $(DIST_DIR)
+	# ./$(SCRIPTS_DIR)/build.sh $(POSTS_DIR) $(DIST_DIR)
+	# add -p flag if POSTS is set
+	./$(SCRIPTS_DIR)/build.sh $(POSTS_DIR) $(DIST_DIR) $(posts)
 
 serve:
 	python3 -m http.server --directory $(DIST_DIR)
