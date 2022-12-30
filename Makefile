@@ -13,7 +13,7 @@ SCRIPTS_DIR=scripts
 all: clean build serve
 
 clean:
-	rm -rf $(DIST_DIR)
+	find $(DIST_DIR) -not -name ".gitkeep" -print -delete
 
 build:
 	./$(SCRIPTS_DIR)/build.sh $(POSTS_DIR) $(DIST_DIR) $(posts)

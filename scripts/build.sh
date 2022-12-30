@@ -41,4 +41,4 @@ if [ "$BUILD_POSTS" = 1 ]; then
 fi
 
 METADATA=$(cat METADATA | sed -e "s/\//\\\\\//g")
-sed -i -e "s/<!-- METADATA -->/$METADATA/g" $DIST_DIR/index.html
+sed -i -e "s/<!-- META -->/$METADATA/g" $DIST_DIR/index.html

@@ -4,7 +4,7 @@ make clean build posts=1
 git checkout build
 git checkout main -- dist
 
-rsync -a dist/ .
+rsync -a dist/ . --exclude=.gitkeep
 rm -rf dist
 
 git add .
