@@ -28,7 +28,6 @@ if [ "$BUILD_POSTS" = 1 ]; then
 
     post_link=${to#"$DIST_DIR"}
     date=$(grep -oP '(?<=date: ).*' $file)
-
     posts+="<li><a href=\"$post_link\">$post_link</a></li>"
 
     pandoc -s -f markdown -t html5+smart --highlight=zenburn -H METADATA --css /styles/theme.css -o $to $file

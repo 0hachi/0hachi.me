@@ -13,7 +13,7 @@ inspired by webb's design, i created my own website & made a few changes to it. 
 
 my first idea was to use a static site generator, but i found the configuration overwhelming & disliked the added complexity & design. instead, i turned to a tool i used to use a lot when taking latex notes: [pandoc](https://pandoc.org/).
 
-to generate my blog posts, i simply fed p&oc `.md` files & it converted them to `.html` files.
+to generate my blog posts, i simply fed pandoc `.md` files & it converted them to `.html` files.
 
 ```sh
 for file in posts/*.md; do
