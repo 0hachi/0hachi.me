@@ -17,7 +17,7 @@ clean:
 	touch $(DIST_DIR)/.gitkeep
 
 build:
-	./$(SCRIPTS_DIR)/build.sh $(POSTS_DIR) $(DIST_DIR) $(posts)
+	./$(SCRIPTS_DIR)/build.py $(POSTS_DIR) $(DIST_DIR) $(posts)
 
 serve:
 	python3 -m http.server --directory $(DIST_DIR)
