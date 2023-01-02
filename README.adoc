@@ -1,0 +1,17 @@
+== 🌐 0hachi.me
+
+personal website & blog powered by https://pandoc.org/[pandoc]
+
+== 📑 instructions
+
+[source,sh]
+----
+make build # builds the website to ./dist
+make build posts=1 # builds the website to ./dist and the posts
+make serve # serves the website on localhost:8000
+----
+
+== 📝 todo
+
+switch away from pandoc.
+i was trying to convert my blog to asciidoc and got trolled pretty hard :c
