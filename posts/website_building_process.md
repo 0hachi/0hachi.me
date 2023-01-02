@@ -5,9 +5,12 @@ date: 30.12.2022
 
 ## styling a simple blog
 
-i used to be hesitant about making websites because i found the tools & technologies frustrating to work with, & i'm not a designer. that changed when i came across [webb's website](https://webb.spiderden.org/). although i was familiar with minimalism & simplicity, i had never seen a website that exploited it in such a beautiful way.
+i used to be hesitant about making websites because i found the tools & technologies frustrating to work with, & i'm not a designer. 
 
-inspired by webb's design, i created my own website & made a few changes to it. however, the most challenging part was the blog. i wanted to create a blog that was as simple as possible & easy to update with new posts.
+that changed when i came across [webb's website](https://webb.spiderden.org/); although i was familiar with minimalism & simplicity, i had never seen a website that exploited it in such a beautiful way.
+
+inspired by webb's design, i created my own website & made a few changes to it.
+however, the most challenging part was the blog. i wanted to create a blog that was as simple as possible & easy to update with new posts.
 
 ## static generation of blog posts
 
